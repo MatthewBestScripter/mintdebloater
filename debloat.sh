@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "=== Updating package lists ==="
+echo "Starting Linux Mint debloater :D"
 sudo apt update
 
 echo "=== Removing libreOffice ==="
