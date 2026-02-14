@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "=== Starting Linux Mint debloat, but stronger ! ==="
+echo "Starting Linux Mint debloat, but stronger !"
 
 sudo apt update
 
-echo "=== Limiting journald disk usage ==="
+echo "Limiting journald disk usage"
 
 sudo mkdir -p /etc/systemd/journald.conf.d
 
@@ -18,7 +18,7 @@ sudo systemctl restart systemd-journald
 
 # Disabling unnecessary systemd services, remove services which you want to keep.
 
-echo "=== Disabling non-essential services ==="
+echo "Disabling non-essential services"
 
 sudo systemctl disable cups.service 2>/dev/null || true
 sudo systemctl disable cups-browsed.service 2>/dev/null || true
